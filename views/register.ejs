@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>Condor login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="css/sign-in.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+ <div class="container">
+    <div class="row">
+    <div class="col-lg-12 shadow-lg p-3 mb-5">
+        <div class="card  border-primary">
+        <div class="card-header bg-primary ">Registro</div>
+        <div class="card-body text-primary">
+        <form action="/register" method="POST">
+            <div class="mb-3">
+                <label for="name">Nombre completo</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Ingrese su Nombre">
+            </div>
+            <div class="mb-3">
+                <label for="user">Nombre de usuario</label>
+                <input type="text" class="form-control" id="user" name="user" placeholder="Ingrese su usuario">
+            </div>
+            <!--
+            <div class="mb-3">
+                <label for="tipo">Tipo de persona</label>
+                <select name="tipo">
+                    <option value="1" selected>Profesor</option>
+                    <option value="2">Estudiante</option> 
+                  </select>
+            </div>
+            -->
+            <div class="mb-3">
+                <label for="pass">Password</label>
+                <input type="password" class="form-control" id="pass" name="pass" placeholder="Ingrese su contraseña">
+            </div>
+        </div>
+        <div class="card-footer bg-transparent border-primary">
+            <a href="/" type="button" class="btn btn-danger">cancelar</a>
+            <a type="submit" class="btn btn-primary">Registrar</a>
+        </div>
+        </form>
+</div>
+</div>
+</div>
+</div>
+  </body>
+</html>
